@@ -1,0 +1,178 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+
+}
+
+div.video iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+div.Texto {
+    text-align: center;
+}
+
+/* estilos.css */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-image: url('images/fondo.jpg');
+    /* Ruta relativa a tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    /* Ajusta la transparencia según tus preferencias (0.6 es un valor de ejemplo) */
+    z-index: -1;
+    /* Coloca la imagen detrás del contenido */
+}
+
+/* El resto de tu estilo CSS permanece igual */
+
+/* estilos.css */
+.titulo-principal {
+    font-size: 50px;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+    margin-top: 100px;
+}
+
+.imagen-debajo-titulo {
+    text-align: center;
+    /* Centra la imagen horizontalmente */
+}
+
+.imagen-debajo-titulo img {
+    width: 180px;
+    /* Ajusta el ancho según tus preferencias */
+    height: 180px;
+    /* Ajusta la altura según tus preferencias */
+}
+
+.Acerca {
+    font-size: 23px;
+}
+
+.Ultimos {
+    font-size: 40;
+}
+
+div.video {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    /* Cambia el tamaño de fuente según tus preferencias */
+}
+
+div.video-container {
+    display: flex;
+    /* Utilizamos flexbox para alinear los iframes en fila */
+    justify-content: space-around;
+    /* Centramos los iframes horizontalmente */
+    flex-wrap: wrap;
+}
+
+div.video iframe {
+    margin: 0 10px;
+    /* Agregamos un margen horizontal entre los iframes */
+}
+
+.top-bar {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Añadimos left: 0; para que ocupe todo el ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* Asegura que la barra esté encima del contenido */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fondos-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    appearance: none;
+    /* Agregamos esta propiedad */
+}
+
+.fondos-button:hover {
+    background-color: #0056b3;
+}
+
+.suscribete-button {
+    background-color: #ff0000;
+    /* Rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.suscribete-button:hover {
+    background-color: #cc0000;
+}
+
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+.skins {
+    text-align: center;
+}
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+
+    .movil {
+        display: none;
+    }
+}
